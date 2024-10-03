@@ -7,13 +7,17 @@ Project 1 for ATLS 4630, Mallory Prescott
 The purpose of this project will be to create a functional and dynamic portfolio website draft. I want to use the <a href="https://gsap.com/about/">GSAP library</a> to make my website fun and interesting. The inspiration behind it is my current job hunting, I need a decent portfolio website, unlike those I already have, to show to employers and others to demonstrate my skills and work. I'm unhappy with all my drafts so I want to use this as an opportunity to make a site that is dynamic and creative. Even if I have to scrap the site entirely in the future, I want to use this as a draft, a practice exercise, and to utilize new libraries. The intended audience is employers and hiring managers, or anyone else that I would want to show examples of my work to. 
 
 <h4>Wireframe</h4>
-Below is a simple sketched-out wireframe depicting setups for my home page, about page, work page, etc. I would have liked to have developed a concrete wireframe in Figma, 
-but I figured I could save time by just prototyping it. 
-<img src="https://github.com/user-attachments/assets/16433037-2c11-46e1-8d22-080dcf0ff770" alt="simple wireframe for portfolio">
-<h4>Description of JS being used, how</h4>
-<h4>Description of JS library used, what for</h4>
-<h4>Any content/information sources</h4>
-<h4>How website will be responsive for different screen sizes/environments</h4>
+<img src="https://github.com/user-attachments/assets/16433037-2c11-46e1-8d22-080dcf0ff770" alt="simple wireframe for portfolio" width="400px"></p>
+<p>
+  Here is a simple sketched-out wireframe depicting setups for my home page, about page, work page, etc. I would have liked to have developed a concrete wireframe in Figma, 
+  but I figured I could save time by just prototyping it. 
+</p>
+
+<h4>Details</h4>
+<p>I'm going to use javascript to make elements dynamic, to implement animations, and maybe add some interesting graphs or data tools. More likely, however, I'll just be focusing on animations to make my portfolio look nice. If I have the time and ability, however, I want to try to use js to import and export data, adding it to the HTML like that rather than having it manually in the file.</p>
+<p>I'll be using the GSAP library to add smooth animations to the data on the website, mostly on the home page. I'm not sure about the specific uses of them right now, however, this is just because I have yet to play around with this library and decide how I want to use it. Once I experiment with it, I'll start adding it to maybe have text slide in or add transitions. </p>
+<p>Since this is just a portfolio profile website, the information I'll be using is just my past projects to supply the information. Of course, I'll still be referencing the libraries' websites for ways to implement them, troubleshooting, and combinations. I'll likely also be referencing W3C, validator.nu, and other sites to check for accessibility since I want my portfolio to use universal design principles.</p>
+<p>To accommodate for different screens, I'll likely use either js or CSS to sample the user's screen size and use that information on how to set up the webpage. I'll likely end up reformating the website or display depending on if it's accessed on a mobile device or computer. Additionally, maybe I could do the same to change the colors of the page depending on whether the browser is in dark mode or not. </p>
 
 <h3>Goals</h3>
 <h4>Prototyping</h4>
