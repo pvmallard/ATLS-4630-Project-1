@@ -22,8 +22,8 @@ The purpose of this project will be to create a functional and dynamic portfolio
 <h3>Goals</h3>
 <h4>Prototyping</h4>
 <ul>
-  <li>I want to have the set up outline of each page ready to go for my first prototype. Just to have things set up for information and make sure it works well</li>
-  <li>Once my outline is complete </li>
+  <li>I want to have the outline of each page set up for my first prototype. The focus will be having things ready for information, to make sure it works well</li>
+  <li>Once my outline is complete, I'll start experimenting with the items I import from the GSAP library. I want to have a few uses of its elements on my home page and hopefully a few others scattered elsewhere. This main portion will be making the library work and the page look and feel good</li>
   <li>I'll likely incorporate some css as I go, particularly for the general page setup, however, this is less important to me than the library implementation, functional javascript, and HTML outline. Therefore, I will focus on the full implementation of css last</li>
 </ul>
 
