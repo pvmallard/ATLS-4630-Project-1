@@ -44,6 +44,10 @@ The purpose of this project will be to create a functional and dynamic portfolio
 
 <h2>Milestone 2</h2>
 <h3>Progress</h3>
+<video auto width="320" height="240">
+  <source src="Portfolio\vid\milestone-2.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video> 
 <h4>Process</h4>
 <p>My process thus far has been properly installing and experimenting with the GSAP library. I try small elements at a time and try to see how they are implemented and what I can do to them to enhance my page. Unfortunately, the free effects available in the library aren't quite as expansive as I thought. I'm sure with practice and knowledge, the potential for these tools can be far greater. Given my current timeframe and skills with the library, however, I think I will have to shrink and adapt to only what I know I am capable of utilizing within the timeframe.I've only be focusing on the homepage, to simplify my process of experimentation and such. </p>
 <h4>What's Completed and What's Changed</h4>
