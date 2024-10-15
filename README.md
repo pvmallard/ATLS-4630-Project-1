@@ -42,4 +42,12 @@ The purpose of this project will be to create a functional and dynamic portfolio
   <li>Much later, use this as a base to recreate the portfolio in React</li>
 </ul>
 
-
+<h2>Milestone 2</h2>
+<h3>Progress</h3>
+<h4>Process</h4>
+<p>My process thus far has been properly installing and experimenting with the GSAP library. I try small elements at a time and try to see how they are implemented and what I can do to them to enhance my page. Unfortunately, the free effects available in the library aren't quite as expansive as I thought. I'm sure with practice and knowledge, the potential for these tools can be far greater. Given my current timeframe and skills with the library, however, I think I will have to shrink and adapt to only what I know I am capable of utilizing within the timeframe.I've only be focusing on the homepage, to simplify my process of experimentation and such. </p>
+<h4>What's Completed and What's Changed</h4>
+<p>So far, I'm not as far along as I'd like to be. I have the basics set up for the heading of the site, but I'm lacking information and a formal setup or understanding of how I will tackle each element I want to include. Right now I'm working on implementing parallax or scrolling effects, though this, of course, will require me to add elements to scroll through.</p>
+<p>Additionally I've changed the format of my navigation. Before, the plan was to just have a vertical list of my tabs, this is sort of still the case, but now it is hidden by a button which pulls down a nav overlay that I can customize later. I hope to add GSAP to this as well, but for now it functions well enough. There is still much I have to do.</p>
+<h3>Moving Forward</h3>
+<p>My main focus for the next milestone will be to work on responsive design and the layout for various screen sizes. This will include positioning and starting to get a more firm layout for my assets. I also want to start populating my site with information: works, images, links, reports, my resume, and the like. As this is the main purpose of a profile website, I want to have the information so I can work on the styling even if I end up changing the contents in the future. Additionally, I'm hoping to play around with a few more GSAP effects now that I'm more familiar with the library. Hopefully, by Milestone 3 I will have a firm draft of a profile page.</p>

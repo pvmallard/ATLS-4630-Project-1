@@ -18,17 +18,69 @@ gsap.registerPlugin(Flip,ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionP
 
 console.log(gsap);
 
-let nameTitle = document.getElementById("name");
-const nameArray = nameTitle.textContent.split("");
-nameTitle.textContent = " ";
+let content = document.getElementById("container");
+gsap.fromTo(content, {opacity: 0},
+  {opacity: 1, duration: 2})
 
-nameArray.forEach(element => {
-  console.log(element);
-  gsap.fromTo(nameTitle, 
-    {x: -400, opacity: 0}, 
-    {x: 200, opacity: 1, innerText: nameTitle.textContent += element, duration:3}
-  );
-});
+let first = document.getElementById("first-name");
+let last = document.getElementById("last-name");
+// const nameArray = nameTitle.textContent.split("");
+first.textContent = " ";
+last.textContent = " ";
+
+gsap.fromTo(first, 
+    {x: -100, opacity: 0},
+    {x: 200, opacity: 1, 
+      duration: 2.7, 
+      stagger: 0.2,
+      ease: "back.out",
+      text: {
+        value: "MALLORY",
+        delimiter: "",
+        speed: 0.2
+      }
+    })
+
+  gsap.fromTo(last, 
+    {x: 700, y: 200, opacity: 0},
+    {x: 400, opacity: 1, 
+      duration: 2.7, 
+      stagger: 0.2,
+      ease: "back.out",
+      text: {
+        value: "PRESCOTT",
+        delimiter: "",
+        speed: 0.2
+      }
+    })
+  
+let overlay = document.getElementById("overlay");
+let navButton = document.getElementById("nav-btn");
+navButton.addEventListener('click', openNav);
+let closeNavButton = document.getElementById("close-nav-btn");
+closeNavButton.addEventListener('click', closeNav);
+closeNavButton.style.visibility = "hidden";
+
+function openNav(){
+  console.log("open nav");
+  overlay.style.height = "100%";
+  closeNavButton.style.visibility = "visible";
+}
+function closeNav(){
+  console.log("close nav");
+  overlay.style.height = "0%";
+  closeNavButton.style.visibility = "hidden";
+}
+// gsap.fromTo(nameTitle, 
+//   {x: -400, opacity: 0}, 
+//   {x: 200, opacity: 1, duration: 3})
+
+// nameArray.forEach(element => {
+//   console.log(nameTitle.textContent);
+//   gsap.to(nameTitle.textContent, 
+//     {innerText: nameTitle.textContent += element, delay: 2}
+//   );
+// });
 // gsap.fromTo(nameTitle, 
 //   {x: -500, y:-200, rotation: -20}, 
 //   {x: 200, y:0, rotation: 0}

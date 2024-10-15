@@ -5,25 +5,40 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Project 1</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="main.js" type="module"></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="container">
             <a href="#main-content" class="sr-only">Skip to main content
             </a>
             
             <header>
-                <h1 id="name" class="underline bg-blue-500">MALLORY PRESCOTT</h1>
+                <h1 class="sr-only">Mallory Prescott's Profile</h1>
+                <h2 id="first-name" class="name">MALLORY</h2>
+                <h2 id="last-name" class="name">PRESCOTT</h2>
+                
+                <div class="top-bit">
+                    
+                </div>
 
-                <nav class="flexy">
+                <button id="nav-btn" class="navButton">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <nav id="overlay" class="overlay">
                     <h2 class="sr-only">contents</h2>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About Me</a></li>
-                        <li><a href="#">Resume</a></li>
-                        <li><a href="#">Projects</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
+                    <div class="overlay-content">
+                        <button id="close-nav-btn" class="navButton">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Me</a></li>
+                            <li><a href="#">Resume</a></li>
+                            <li><a href="#">Projects</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
                 </nav>
             </header>
 
