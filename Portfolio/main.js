@@ -16,6 +16,10 @@ import { TextPlugin } from "gsap/dist/TextPlugin";
 
 gsap.registerPlugin(Flip,ScrollTrigger,Observer,ScrollToPlugin,Draggable,MotionPathPlugin,EaselPlugin,PixiPlugin,TextPlugin,RoughEase,ExpoScaleEase,SlowMo,CustomEase);
 
+import LocomotiveScroll from 'locomotive-scroll';
+
+const locomotiveScroll = new LocomotiveScroll();
+
 console.log(gsap);
 
 let content = document.getElementById("container");
@@ -27,6 +31,8 @@ let last = document.getElementById("last-name");
 // const nameArray = nameTitle.textContent.split("");
 first.textContent = " ";
 last.textContent = " ";
+
+const designTerms = ["", "Game", "UI/UX", "Graphic", "Experience", "Web", "Front-End", "Animation"]
 
 gsap.fromTo(first, 
     {x: -100, opacity: 0},
@@ -65,11 +71,22 @@ function openNav(){
   console.log("open nav");
   overlay.style.height = "100%";
   closeNavButton.style.visibility = "visible";
+
+  gsap.fromTo(".overlay-content", 
+    {opacity:0},
+    {
+      opacity: 1
+    })
 }
 function closeNav(){
   console.log("close nav");
   overlay.style.height = "0%";
-  closeNavButton.style.visibility = "hidden";
+
+  gsap.fromTo(".overlay-content", 
+    {opacity:1},
+    {opacity: 0})
+  
+    closeNavButton.style.visibility = "hidden";
 }
 // gsap.fromTo(nameTitle, 
 //   {x: -400, opacity: 0}, 

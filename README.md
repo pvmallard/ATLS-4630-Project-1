@@ -55,3 +55,7 @@ Your browser does not support the video tag.
 <p>Additionally I've changed the format of my navigation. Before, the plan was to just have a vertical list of my tabs, this is sort of still the case, but now it is hidden by a button which pulls down a nav overlay that I can customize later. I hope to add GSAP to this as well, but for now it functions well enough. There is still much I have to do.</p>
 <h3>Moving Forward</h3>
 <p>My main focus for the next milestone will be to work on responsive design and the layout for various screen sizes. This will include positioning and starting to get a more firm layout for my assets. I also want to start populating my site with information: works, images, links, reports, my resume, and the like. As this is the main purpose of a profile website, I want to have the information so I can work on the styling even if I end up changing the contents in the future. Additionally, I'm hoping to play around with a few more GSAP effects now that I'm more familiar with the library. Hopefully, by Milestone 3 I will have a firm draft of a profile page.</p>
+
+<h2>Milestone 3</h2>
+<h3>Progress</h3>
+<p>For one I implemented a new library specifically for a parallax scrolling effect: locomotive</p>

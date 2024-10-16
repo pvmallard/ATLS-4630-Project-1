@@ -47,6 +47,18 @@
 }
 */
 
+/* Only necessary with horizontal scrolling */
+/* html[data-scroll-orientation="horizontal"] {
+  body {
+      width: fit-content;
+  }
+  [data-scroll-container] {
+      display: flex;
+  }
+} */
+
+
+
 body {
     background: #D4D4D4;
     font-family: "", sans-serif;
@@ -55,11 +67,6 @@ body {
 .container {
     /* max-width: 1600px; */
     margin: 0 auto;
-    padding: 10px;
-    padding-top: 0%;
-    /* text-align: center; */
-    /* display: flex;
-    flex-direction: column; */
 }
 
 .sr-only {
@@ -158,9 +165,9 @@ h1, h2, h3 {
 .top-bit{
   position: absolute;
   top: 5%;
-  left: 25%;
-  width: 25em;
-  height: 20em;
+  
+  width: 10em;
+  height: 10em;
   border: 2px;
   border-style: dashed;
   transition: 0.1s;
@@ -169,4 +176,26 @@ h1, h2, h3 {
 .top-bit:hover {
   border: 4px;
   border-style: dashed;
+}
+
+.panel {
+  position: relative;
+  height: 100vh;
+}
+
+.red {
+  background-color: darkred;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.red p, h1 {
+  color: D4D4D4;
 }
