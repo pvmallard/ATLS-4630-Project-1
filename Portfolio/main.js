@@ -26,6 +26,9 @@ let content = document.getElementById("container");
 gsap.fromTo(content, {opacity: 0},
   {opacity: 1, duration: 2})
 
+document.documentElement.clientWidth;
+document.documentElement.clientHeight;
+
 let first = document.getElementById("first-name");
 let last = document.getElementById("last-name");
 // const nameArray = nameTitle.textContent.split("");
@@ -35,8 +38,8 @@ last.textContent = " ";
 const designTerms = ["", "Game", "UI/UX", "Graphic", "Experience", "Web", "Front-End", "Animation"]
 
 gsap.fromTo(first, 
-    {x: -100, opacity: 0},
-    {x: 200, opacity: 1, 
+    {x: "-50%", opacity: 0},
+    {xPercent: 0, x:50, opacity: 1, 
       duration: 2.7, 
       stagger: 0.2,
       ease: "back.out",
@@ -48,8 +51,8 @@ gsap.fromTo(first,
     })
 
   gsap.fromTo(last, 
-    {x: 700, y: 200, opacity: 0},
-    {x: 400, opacity: 1, 
+    {x: "100%", opacity: 0},
+    {xPercent: 100, x: -450, opacity: 1, 
       duration: 2.7, 
       stagger: 0.2,
       ease: "back.out",

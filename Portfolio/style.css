@@ -67,6 +67,7 @@ body {
 .container {
     /* max-width: 1600px; */
     margin: 0 auto;
+    width: 100%;
 }
 
 .sr-only {
@@ -96,7 +97,13 @@ h1, h2, h3 {
 }
 
 .name {
-  font-size: 2em;
+  font-size: 5em;
+}
+#first-name{
+  height: 5em;
+}
+#last-name{
+  height: 5em;
 }
 
 .navButton {
@@ -164,11 +171,12 @@ h1, h2, h3 {
 
 .top-bit{
   position: absolute;
-  top: 5%;
+  top: 15%;
+  bottom: 15%;
+  left: 15%;
+  right: 15%;
   
-  width: 10em;
-  height: 10em;
-  border: 2px;
+  border: 4px;
   border-style: dashed;
   transition: 0.1s;
 }
