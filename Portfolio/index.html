@@ -3,84 +3,242 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Project 1</title>
-        <link rel="stylesheet" href="style.css">
+        <title>Project 1 - Portfolio</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link href="css/skip-nav.css" rel="stylesheet">
+        <link href="css/overlay.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="main.js" type="module"></script>
+        <script src="js/main.js" type="module"></script>
+        <!-- <script src="js/wobble.js" type="module"></script> -->
     </head>
     <body>
         <div class="container" id="container">
-            <a href="#main-content" class="sr-only">Skip to main content
-            </a>
+            <a class="skip-link" href="#maincontent">Skip to main content</a>
             
             <header class="panel">
                 <h1 class="sr-only">Mallory Prescott's Profile</h1>
-                <div data-scroll data-scroll-speed="0.2" class="container50">
+                <div data-scroll data-scroll-speed="0.4" class="container50">
                     <h2 id="first-name" class="name">MALLORY</h2>
                     <h2 id="last-name" class="name">PRESCOTT</h2>
                 </div>
-                <h2>Sorry for the mess! This site is under heavy renovation</h2>
-                
-                <div data-scroll data-scroll-speed="0.8" class="top-bit"></div>
-                <div data-scroll data-scroll-speed="0.5" class="top-bit-text">
+
+                <div data-scroll data-scroll-speed="0.8" class="top-bit">
+                    <!-- <figure>
+                        <img src="img/itsMe.jpg" alt="me, noting but me">
+                        <figcaption class="sr-only">Profile picture of me</figcaption>
+                    </figure> -->
+                    <div class="top-bit-text" data-scroll data-scroll-speed="0.4">
+                        <h3 style="display:inline">Software Engineer &</h3>
+                        <button  id="designer" style="display:inline"><h3>Designer</h3></button>
+                        <p data-scroll data-scroll-speed="0.1">
+                            I'm a specialist in computer science, creative technology, and design. I have a passion for accessibility, universal design, and responsive features.
+                        </p>
+                        <h3 style="color:darkred">Sorry for the mess! This site is under heavy renovation</h3>
+                    </div>
+                </div>
+                <!-- <div data-scroll data-scroll-speed="0.5" class="top-bit-text">
                     <h3>Software Engineer &</h3>
                     <button id="designer"><h3>Designer</h3></button>
                     <p>
                         I'm a specialist in computer science, creative technology, and design. I have a passion for accessibility, universal design, and responsive features.
                     </p>
-                </div>
+                </div> -->
+                
+            </header>
 
+            <nav>
                 <button id="nav-btn" class="navButton">
                     <i class="fa fa-bars"></i>
                 </button>
-                <nav id="overlay" class="overlay">
+                <section id="overlay" class="overlay">
                     <h2 class="sr-only">contents</h2>
                     <div class="overlay-content">
                         <button id="close-nav-btn" class="navButton">
-                            <i class="fa fa-bars"></i>
+                            <i class="fa fa-close"></i>
                         </button>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About Me</a></li>
-                            <li><a href="#">Resume</a></li>
-                            <li><a href="#">Work</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="aboutMe.html">About Me</a></li>
+                            <li><a href="resume.html">Resume</a></li>
+                            <li><a href="work.html">Work</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                </nav>
-            </header>
+                </section>
+            </nav>
 
-            <main id="main-content">
+            <main id="maincontent">
 
-                <section id="software" class="panel" data-scroll data-scroll-speed="0.5">
-                    <div class="red"></div>
-                    <h2>Software Engineer</h2>
-                    <p>
-                        Overview and experience
-                        link to software engineering work
-                    </p>
+                <section id="software" class="panel red" data-scroll data-scroll-speed="0.5">
+                    <div class="content">
+                        <h2>Software Engineer</h2>
+                        <p>
+                            Since 2020, I've studied various computer science languages, applications, and best practices. 
+                        </p>
+                    
+                        <div class="circleStore" data-scroll data-scroll-speed="0.1">
+                            <p class="svgBox bigger">C/C++</p>
+                            <p class="svgBox smaller">C#</p>
+                            <p class="svgBox">Java</p>
+                            <p class="svgBox bigger">JavaScript</p>
+                            <p class="svgBox bigger">Python</p>
+                            <p class="svgBox smaller">Scala</p>
+                            <p class="svgBox bigger">Databases</p>
+                            <p class="svgBox">SQL</p>
+                            <p class="svgBox">Postgres</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <figure class="icon-link-big">
+                            <a href="https://github.com/pvmallard">
+                                <img src="img/GitHub-Symbol.png" alt="GitHub Symbol" class="icon-link-big">
+                            </a>
+                            <figcaption>Github Profile</figcaption>
+                        </figure>
+                        <figure class="icon-link">
+                            <a href="http://www.linkedin.com/in/mallory-prescott-45b4a41ba">
+                                <img src="img/LinkedIn-Symbol.png" alt="LinkedIn Symbol" class="icon-link">
+                            </a>
+                            <figcaption>LinkedIn Profile</figcaption>
+                        </figure>
+                    </div>
                 </section>
 
-                <section id="game" class="panel" data-scroll data-scroll-speed="0.5">
-                    <h2>Software Engineer</h2>
-                    <p>
-                        Overview and experience
-                        link to software engineering work
-                    </p>
+                <section id="game" class="panel white" data-scroll data-scroll-speed="0.5">
+                    <div class="content">
+                        <h2>Game Design and Development</h2>
+                        <p>
+                            Since 2020, I've studied various computer science languages, applications, and best practices. 
+                        </p>
+                    
+                        <div class="circleStore" data-scroll data-scroll-speed="0.1">
+                            <p class="svgBox bigger">Unity</p>
+                            <p class="svgBox smaller">C#</p>
+                            <p class="svgBox">Godot</p>
+                            <p class="svgBox bigger">GDScript</p>
+                            <p class="svgBox bigger">DAWs</p>
+                            <p class="svgBox bigger">Audacity</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <figure class="icon-link-big">
+                            <a href="https://mallardamania.itch.io/">
+                                <img src="img/mallardamania.jpg" alt="itch.io profile icon" class="icon-link-big" 
+                                style="border-radius: 50%; border: 5px white solid;">
+                            </a>
+                            <figcaption>itch.io Profile</figcaption>
+                        </figure>
+                        <figure class="icon-link">
+                            <a href="http://www.linkedin.com/in/mallory-prescott-45b4a41ba">
+                                <img src="img/LinkedIn-Symbol.png" alt="LinkedIn Symbol" class="icon-link">
+                            </a>
+                            <figcaption>LinkedIn Profile</figcaption>
+                        </figure>
+                    </div>
                 </section>
 
-                <section id="graphic" class="panel" data-scroll data-scroll-speed="0.5">
-                    <div class="red"></div>
-                    <h2>Software Engineer</h2>
-                    <p>
-                        Overview and experience
-                        link to software engineering work
-                    </p>
+                <section id="web" class="panel white" data-scroll data-scroll-speed="0.5">
+                    <div class="content">
+                        <h2>Web Design and Development</h2>
+                        <p>
+                            Since 2020, I've studied various computer science languages, applications, and best practices. 
+                        </p>
+                    
+                        <div class="circleStore" data-scroll data-scroll-speed="0.1">
+                            <p class="svgBox bigger">HTML</p>
+                            <p class="svgBox smaller">CSS</p>
+                            <p class="svgBox">JavaScript</p>
+                            <p class="svgBox bigger">React</p>
+                            <p class="svgBox bigger">RESTful</p>
+                            <p class="svgBox bigger">APIs</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <figure class="icon-link-big">
+                            <a href="https://mallardamania.itch.io/">
+                                <img src="img/mallardamania.jpg" alt="itch.io profile icon" class="icon-link-big" 
+                                style="border-radius: 50%; border: 5px white solid;">
+                            </a>
+                            <figcaption>itch.io Profile</figcaption>
+                        </figure>
+                        <figure class="icon-link">
+                            <a href="http://www.linkedin.com/in/mallory-prescott-45b4a41ba">
+                                <img src="img/LinkedIn-Symbol.png" alt="LinkedIn Symbol" class="icon-link">
+                            </a>
+                            <figcaption>LinkedIn Profile</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section id="graphic" class="panel red" data-scroll data-scroll-speed="0.5">
+                    <div class="content">
+                        <h2>Graphic Design</h2>
+                        <p>
+                            Since 2020, I've studied various computer science languages, applications, and best practices. 
+                        </p>
+                    
+                        <div class="circleStore" data-scroll data-scroll-speed="0.1">
+                            <p class="svgBox bigger">Adobe</p>
+                            <p class="svgBox smaller">Illustrator</p>
+                            <p class="svgBox">Photoshop</p>
+                            <p class="svgBox bigger">Animation</p>
+                            <p class="svgBox bigger">Procreate</p>
+                            <p class="svgBox smaller">CAD</p>
+                            <p class="svgBox bigger">Blender</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <figure class="icon-link-big">
+                            <a href="https://github.com/pvmallard">
+                                <img src="img/GitHub-Symbol.png" alt="GitHub Symbol" class="icon-link-big">
+                            </a>
+                            <figcaption>Github Profile</figcaption>
+                        </figure>
+                        <figure class="icon-link">
+                            <a href="http://www.linkedin.com/in/mallory-prescott-45b4a41ba">
+                                <img src="img/LinkedIn-Symbol.png" alt="LinkedIn Symbol" class="icon-link">
+                            </a>
+                            <figcaption>LinkedIn Profile</figcaption>
+                        </figure>
+                    </div>
+                </section>
+
+                <section id="sound" class="panel white" data-scroll data-scroll-speed="0.5">
+                    <div class="content">
+                        <h2>And More</h2>
+                        <p>
+                            Fabrication, Sound Design, Experience Design, etc
+                        </p>
+                    
+                        <div class="circleStore" data-scroll data-scroll-speed="0.1">
+                            <p class="svgBox bigger">Arduino</p>
+                            <p class="svgBox smaller">Processing</p>
+                            <p class="svgBox">Ableton</p>
+                            <p class="svgBox bigger">Audacity</p>
+                            <p class="svgBox bigger">Circuitry</p>
+                            <p class="svgBox smaller">CAD</p>
+                            <p class="svgBox bigger">Physics</p>
+                        </div>
+                    </div>
+                    <div class="content">
+                        <figure class="icon-link-big">
+                            <a href="https://github.com/pvmallard">
+                                <img src="img/GitHub-Symbol.png" alt="GitHub Symbol" class="icon-link-big">
+                            </a>
+                            <figcaption>Github Profile</figcaption>
+                        </figure>
+                        <figure class="icon-link">
+                            <a href="http://www.linkedin.com/in/mallory-prescott-45b4a41ba">
+                                <img src="img/LinkedIn-Symbol.png" alt="LinkedIn Symbol" class="icon-link">
+                            </a>
+                            <figcaption>LinkedIn Profile</figcaption>
+                        </figure>
+                    </div>
                 </section>
             </main>
 
-            <footer>
-                <p>designed by mal</p>
+            <footer >
+                <p>designed by MALLORY PRESCOTT</p>
                 <address>mvprescott17@gmail.com</address>
                 <small>&copy; 2024</small>
             </footer>

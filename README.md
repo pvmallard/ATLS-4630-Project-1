@@ -58,4 +58,4 @@ Your browser does not support the video tag.
 
 <h2>Milestone 3</h2>
 <h3>Progress</h3>
-<p>For one I implemented a new library specifically for a parallax scrolling effect: locomotive</p>
+<p>For one I implemented a new library specifically for a parallax scrolling effect: locomotive. It's been helpful for getting that delayed scroll affect and adding more movement to my site. </p>

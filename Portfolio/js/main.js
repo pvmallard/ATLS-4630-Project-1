@@ -23,8 +23,8 @@ const locomotiveScroll = new LocomotiveScroll();
 console.log(gsap);
 
 let content = document.getElementById("container");
-gsap.fromTo(content, {opacity: 0},
-  {opacity: 1, duration: 2})
+gsap.fromTo(content, {x: -100, opacity: 0},
+  {x: 0, opacity: 1, duration: 1})
 
 document.documentElement.clientWidth;
 document.documentElement.clientHeight;
@@ -32,27 +32,29 @@ document.documentElement.clientHeight;
 let first = document.getElementById("first-name");
 let last = document.getElementById("last-name");
 // const nameArray = nameTitle.textContent.split("");
-first.textContent = " ";
-last.textContent = " ";
+// first.textContent = " ";
+// last.textContent = " ";
 
-const designTerms = ["", "Game", "UI/UX", "Graphic", "Experience", "Web", "Front-End", "Animation"]
+const designTerms = ["", "Game", "UI/UX", "Web", "Graphic", "Sound"]
 
 gsap.fromTo(first, 
-    {x: "-50%", opacity: 0},
-    {xPercent: 0, x:50, opacity: 1, 
+    {x: -100, opacity: 0},
+    {x: +100,
       duration: 2.7, 
       stagger: 0.2,
       ease: "back.out",
       text: {
         value: "MALLORY",
         delimiter: "",
-        speed: 0.2
-      }
+        speed: 0.2,
+        opacity: 1,
+      },
+      opacity:1
     })
 
   gsap.fromTo(last, 
-    {x: "100%", opacity: 0},
-    {xPercent: 100, x: -450, opacity: 1, 
+    {x: +100, opacity: 0},
+    {x: -100, opacity: 1, 
       duration: 2.7, 
       stagger: 0.2,
       ease: "back.out",
@@ -91,25 +93,52 @@ function closeNav(){
   
     closeNavButton.style.visibility = "hidden";
 }
-// gsap.fromTo(nameTitle, 
-//   {x: -400, opacity: 0}, 
-//   {x: 200, opacity: 1, duration: 3})
 
-// nameArray.forEach(element => {
-//   console.log(nameTitle.textContent);
-//   gsap.to(nameTitle.textContent, 
-//     {innerText: nameTitle.textContent += element, delay: 2}
-//   );
-// });
-// gsap.fromTo(nameTitle, 
-//   {x: -500, y:-200, rotation: -20}, 
-//   {x: 200, y:0, rotation: 0}
-// );
 
-// const summonBeanA = document.getElementById('summon-a');
-// summonBeanA.addEventListener('click', getABean);
-// const summonBeanB = document.getElementById('summon-b');
-// summonBeanB.addEventListener('click', getABean);
-// const merge = document.getElementById('merge');
-// merge.addEventListener('click', mergeBeans);
+// scroll trigger attempt
+const targetElement = document.getElementById('software');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Element is in the viewport
+      console.log('Element reached!');
+
+      // Perform actions when the element is reached
+      // ...
+      gsap.fromTo(".svgBox", { 
+        opacity: 0,
+        x: +100
+      },{ 
+        opacity: 1,
+        duration: 2,
+        x: 0,
+        ease: "bounce",
+        stagger: 0.2
+      });
+
+      gsap.fromTo(".software", { 
+        opacity: 0,
+        x: -100
+      },{ 
+        opacity: 1,
+        duration: 3,
+        x: 0,
+        ease: "back.out",
+        stagger: 0.2
+      });
+
+      // Optionally, stop observing the element
+      // observer.unobserve(targetElement);
+    }
+  });
+});
+
+observer.observe(targetElement);
+
+
+
+
+
+
 

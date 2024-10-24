@@ -1,0 +1,33 @@
+#gallery-nav {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+}
+
+#gallery-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(255,255,255,0.5);
+  transition: 0.2s;
+  width: 100%;
+}
+
+#gallery-nav li {
+  float: left;
+}
+
+#gallery-nav li a {
+  display: block;
+  color: #121212;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+#gallery-nav li a:hover {
+  background-color: rgba(1,1,1,0.5);
+  color: white;
+} 
