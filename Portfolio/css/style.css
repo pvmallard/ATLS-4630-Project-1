@@ -118,7 +118,7 @@ footer{grid-area: footy;}
   flex-shrink: 3;
   max-width: 100%;
   max-height: 100%;
-  background-image: url("/Portfolio/img/itsMe.jpg");
+  background-image: url("C:\Users\Mallory Prescott\Documents\GitHub\ATLS-4630-Project-1\Portfolio\img\itsMe.jpg");
   background-position: center; 
   filter: grayscale(100%);
   justify-content: flex-end;
@@ -304,7 +304,11 @@ figcaption{
   height: 100vh;
 } */
 
-/* @media (prefers-color-scheme: dark) {
+/* feedback:
+- add colors
+- speed up animations */
+
+@media (prefers-color-scheme: dark) {
   body {
     color: #eee;
     background: linear-gradient(-45deg, darkslategray 0%, darkslategray 25%, darkslategray 51%, #121212 100%);
@@ -322,7 +326,7 @@ figcaption{
   footer {
     background-color: #121212;
   }
-} */
+}
 
 @keyframes gradient {
   0% {
